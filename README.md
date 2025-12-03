@@ -18,13 +18,7 @@ Half adder is a combinational circuit that performs simple addition of two binar
 
 Sum = A’B+AB’ =A ⊕ B Carry = AB
 
-![image](https://github.com/naavaneetha/HALF_ADDER_SUBTRACTOR/assets/154305477/bd4a0b2c-cdbc-4184-ab08-81578f121e1f)
-module exp301(a,b,sum,carry);
-input a,b;
-output sum,carry;
-assign sum= (a ^ b);
-assign carry= ( a & b);
-endmodule
+
 
 Figure -01 HALF ADDER
 
@@ -35,13 +29,7 @@ The half-subtractor is a combinational circuit which is used to perform subtract
 Diff = A’B+AB’ =A ⊕ B
 Borrow = A’B
 
- ![image](https://github.com/naavaneetha/HALF_ADDER_SUBTRACTOR/assets/154305477/d76b099c-513f-4e7c-843a-e2fd028a531a)
- module experi333(a,b,difference,borrow);
-input a,b;
-output difference,borrow;
-assign difference= (a ^ b);
-assign borrow= ( ~a & b);
-endmodule
+
 
 Figure -02 HALF Subtractor
 
@@ -61,8 +49,23 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
-<img width="491" height="209" alt="Screenshot 2025-11-23 130254" src="https://github.com/user-attachments/assets/76093fd8-10eb-4a7b-8c64-ca2a2d5b3af9" />
-<img width="499" height="286" alt="Screenshot 2025-11-23 130315" src="https://github.com/user-attachments/assets/144ea00c-206e-4d12-88d4-0ed80789d8b5" />
+<img width="487" height="315" alt="Screenshot 2025-12-03 090228" src="https://github.com/user-attachments/assets/01a1a56f-c197-4f96-a40d-5fcbf4747f61" />
+<img width="532" height="323" alt="Screenshot 2025-12-03 092255" src="https://github.com/user-attachments/assets/c1026937-47e8-4a7f-b32c-5117a2b15897" />
+
+
+module exp3no1(a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum= (a ^ b);
+assign carry= ( a & b);
+endmodule
+
+module exp3no2(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference= (a ^ b);
+assign borrow= ( ~a & b);
+endmodule
 
 
 
@@ -71,14 +74,18 @@ Figure -02 HALF Subtractor
 Developed by: RegisterNumber:*/
 
 **RTL Schematic**
+<img width="356" height="170" alt="Screenshot 2025-12-03 090201" src="https://github.com/user-attachments/assets/97efc41c-be09-42b6-9f2d-39f90ddb67fd" />
+<img width="395" height="188" alt="Screenshot 2025-12-03 091945" src="https://github.com/user-attachments/assets/10d9342c-150b-47a1-98a3-4bd2f25e437c" />
+
+
 
 **Output/TIMING Waveform**
+<img width="1915" height="324" alt="Screenshot 2025-12-03 090642" src="https://github.com/user-attachments/assets/7a7569b5-c0c4-41d4-8163-818521da8ac1" />
+<img width="1894" height="316" alt="Screenshot 2025-12-03 092207" src="https://github.com/user-attachments/assets/a3d62be8-f606-4386-acb0-1773be6c00e4" />
+
+
 
 **Result:**
-<img width="788" height="390" alt="Screenshot 2025-11-21 185034" src="https://github.com/user-attachments/assets/2700c470-795c-4ad3-83d1-5ab662fe4870" />
-<img width="1899" height="180" alt="Screenshot 2025-11-21 185226" src="https://github.com/user-attachments/assets/ee1d2d56-8441-45b5-a7d2-0d216b55e068" />
-<img width="710" height="326" alt="Screenshot 2025-11-21 185722" src="https://github.com/user-attachments/assets/94fa87af-ca69-4796-bb43-820eacb9764d" />
-<img width="1894" height="186" alt="Screenshot 2025-11-21 185857" src="https://github.com/user-attachments/assets/d7e8e11d-dad1-490a-bac7-30e1ae5f6f55" />
 
 
 
